@@ -1,7 +1,5 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
-import io.opentelemetry.sdk.autoconfigure.spi.Ordered;
 
 public class Java2 {
 
