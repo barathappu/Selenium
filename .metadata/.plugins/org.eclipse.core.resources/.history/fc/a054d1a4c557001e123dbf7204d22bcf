@@ -1,0 +1,15 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class DemoEdge {
+    public static void main(String[] args){
+
+        System.out.println("Execution after setting EdgeDriver path in System Variables on Windows!!");
+        WebDriver driver = new EdgeDriver();
+        driver.get("https://google.com");
+        //Thread.sleep(3000);
+        //driver.quit();
+        System.out.println("Execution complete on Windows");
+
+    }
+}

@@ -1,0 +1,21 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Locater {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.edge.driver", "driver\\msedgedriver.exe");
+        WebDriver driver = new EdgeDriver();
+        driver.get("https://www.netflix.com/in/");
+        WebElement mail = driver.findElement(By.name("email"));
+        mail.sendKeys("barathbelieve08@gmail.com");
+        mail.sendKeys(Keys.ENTER);
+        //Thread.sleep(3000);
+	}
+
+}

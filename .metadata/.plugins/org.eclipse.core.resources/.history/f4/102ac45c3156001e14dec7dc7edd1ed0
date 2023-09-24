@@ -1,0 +1,22 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Locater {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.edge.driver", "driver\\msedgedriver.exe");
+		WebDriver MG = new EdgeDriver();
+		MG.get("https://rahulshettyacademy.com/locatorspractice");
+        
+		/*
+		 * WebElement netflix = driver.findElement(By.name("email"));
+		 * netflix.sendKeys("barathbelieve08@gmail.com"); netflix.sendKeys(Keys.ENTER);
+		 * netflix.findElement(By.className("submitBtnContainer")).click();
+		 */
+        //Thread.sleep(3000);
+	}
+
+}

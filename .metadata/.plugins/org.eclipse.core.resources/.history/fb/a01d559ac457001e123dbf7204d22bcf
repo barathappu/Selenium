@@ -1,0 +1,31 @@
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Netflix {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.edge.driver", "driver\\msedgedriver.exe");
+		WebDriver insta = new EdgeDriver();
+		insta.get("https://www.instagram.com/");
+//		insta.findElement(By.name("")).sendKeys("appu_barath");
+//		insta.findElement(By.name("password")).sendKeys("Mbk@6242");
+//		insta.findElement(By.xpath("")).click();
+//		
+		WebDriver driver = new EdgeDriver();
+	      //implicit wait
+	      driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	      //URL launch
+	      driver.get("https://www.instagram.com/");
+	      //identify username
+	      WebElement l = driver
+	      . findElement(By.name("username"));
+	      l.sendKeys("test@gmail.com");
+
+	}
+
+}
